@@ -3,33 +3,7 @@ const liters = document.getElementById('liters')
 const percentage = document.getElementById('percentage')
 const remained = document.getElementById('remained')
 
-updateBigCup()
-
-smallCups.forEach((cup, idx) => {
-  cup.addEventListener('click', () => highlightCups(idx))
-})
-
-function highlightCups(idx) {
-  if (idx === 7 && smallCups[idx].classList.contains('full')) idx--
-  else if (
-    smallCups[idx].classList.contains('full') &&
-    !smallCups[idx].nextElementSibling.classList.contains('full')
-  ) {
-    idx--
-  }
-
-  smallCups.forEach((cup, idx2) => {
-    if (idx2 <= idx) {
-      cup.classList.add('full')
-    } else {
-      cup.classList.remove('full')
-    }
-  })
-
-  updateBigCup()
-}
-
-function updateBigCup() {
+const updateBigCup = () => {
   const fullCups = document.querySelectorAll('.cup-small.full').length
   const totalCups = smallCups.length
 
@@ -50,3 +24,29 @@ function updateBigCup() {
     liters.innerText = `${2 - (250 * fullCups) / 1000}L`
   }
 }
+
+const highlightCups = (index) => {
+  if (index === 7 && smallCups[index].classList.contains('full')) index--
+  else if (
+    smallCups[index].classList.contains('full') &&
+    !smallCups[index].nextElementSibling.classList.contains('full')
+  ) {
+    index--
+  }
+
+  smallCups.forEach((cup, index2) => {
+    if (index2 <= index) {
+      cup.classList.add('full')
+    } else {
+      cup.classList.remove('full')
+    }
+  })
+
+  updateBigCup()
+}
+
+updateBigCup()
+
+smallCups.forEach((cup, idx) => {
+  cup.addEventListener('click', () => highlightCups(idx))
+})
