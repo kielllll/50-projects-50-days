@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5dc;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-image: url('https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 30vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+
+.hero h1 {
+  font-size: 46px;
+  margin: -20px 0 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 180px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 18px;
+  margin: 16px;
+}
+
+.card-header,
+.card-content,
+.card-actions {
+  width: 100%;
+}
+
+.card-header {
+  margin-bottom: 16px;
+}
+
+.card-content {
+  color: #808080;
+}
+
+.card-actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon-button {
+  border: none;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: inherit;
+  color: #000;
+}
+
+.icon-button:hover {
+  background-color: #dedede;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.icon-button:active {
+  transform: scale(90%);
+}
+
+#source-code {
+  margin-right: 8px;
+}
