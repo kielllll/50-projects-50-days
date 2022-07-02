@@ -64,10 +64,91 @@ const projects = [
       'https://github.com/kielllll/50-projects-50-days/tree/main/sound-board',
     path: './projects/sound-board/index.html',
   },
+  {
+    name: 'Dad Jokes',
+    description: 'Chill activity with API handling for dad jokes API.',
+    sourceCode:
+      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/dad-jokes',
+    path: './projects/dad-jokes/index.html',
+  },
+  {
+    name: 'Event KeyCodes',
+    description: 'Really helpful for understanding events with javascript.',
+    sourceCode:
+      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/event-key-codes',
+    path: './projects/event-key-codes/index.html',
+  },
+  {
+    name: 'FAQ Collapse',
+    description:
+      'One of the suave activites I have worked. Awesome for FAQs sections UX!',
+    sourceCode:
+      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/faq-collapse',
+    path: './projects/faq-collapse/index.html',
+  },
+  {
+    name: 'Random Choice Picker',
+    description: 'Nice activity for handling random data.',
+    sourceCode:
+      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/random-choice-picker',
+    path: './projects/random-choice-picker/index.html',
+  },
+  {
+    name: 'Animated Navigation',
+    description: 'Fancy transitions on nav bar.',
+    sourceCode:
+      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/animated-navigation',
+    path: './projects/animated-navigation/index.html',
+  },
+  {
+    name: 'Incrementing Counter',
+    description:
+      'Helpful activity. I now understand how developers put fancy numbers like visitors on their webpage!',
+    sourceCode:
+      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/incrementing-counter',
+    path: './projects/incrementing-counter/index.html',
+  },
+  {
+    name: 'Drink Water',
+    description:
+      'Challenging activity. Heavy coding on javascript DOM with a sprinkle of transitions.',
+    sourceCode:
+      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/drink-water',
+    path: './projects/drink-water/index.html',
+  },
+  {
+    name: 'Movie App',
+    description:
+      'Fun acitivty! Creating a Netflix-like project where you also have API calls challenges.',
+    sourceCode:
+      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/movie-app',
+    path: './projects/movie-app/index.html',
+  },
+  {
+    name: 'Background Slider',
+    description: 'Cool activity! I have learned how carousels work.',
+    sourceCode:
+      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/background-slider',
+    path: './projects/background-slider/index.html',
+  },
 ]
 
-const projectsContainer = document.getElementById('projects-container')
+{
+  /* <a
+      href="#"
+      id="floating-button"
+      class="floating-button active"
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a> */
+}
 
+const projectsContainer = document.getElementById('projects-container')
+const floatingButton = document.createElement('a')
+floatingButton.setAttribute('href', '#')
+floatingButton.classList.add('floating-button')
+floatingButton.innerHTML = '<i class="fa-solid fa-arrow-up">'
+
+// Map each projects and insert to projects section
 projects.forEach(({ name, description, sourceCode, path }) => {
   projectsContainer.innerHTML += `
     <div class="card">
@@ -85,4 +166,14 @@ projects.forEach(({ name, description, sourceCode, path }) => {
       </div>
     </div>
   `
+})
+
+// For floating button display only when scrolling down
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 250) {
+    document.body.appendChild(floatingButton)
+    return
+  }
+
+  document.body.removeChild(floatingButton)
 })
