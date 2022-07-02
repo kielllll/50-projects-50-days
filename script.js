@@ -133,20 +133,8 @@ const projects = [
   },
 ]
 
-{
-  /* <a
-      href="#"
-      id="floating-button"
-      class="floating-button active"
-      ><i class="fa-solid fa-arrow-up"></i
-    ></a> */
-}
-
 const projectsContainer = document.getElementById('projects-container')
-const floatingButton = document.createElement('a')
-floatingButton.setAttribute('href', '#')
-floatingButton.classList.add('floating-button')
-floatingButton.innerHTML = '<i class="fa-solid fa-arrow-up">'
+const floatingButton = document.getElementById('floating-button')
 
 // Map each projects and insert to projects section
 projects.forEach(({ name, description, sourceCode, path }) => {
@@ -171,9 +159,9 @@ projects.forEach(({ name, description, sourceCode, path }) => {
 // For floating button display only when scrolling down
 window.addEventListener('scroll', () => {
   if (window.scrollY > 250) {
-    document.body.appendChild(floatingButton)
+    floatingButton.style = ''
     return
   }
 
-  document.body.removeChild(floatingButton)
+  floatingButton.style = 'visibility: hidden;'
 })
