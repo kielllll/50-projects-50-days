@@ -22,15 +22,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  height: 30vh;
+  height: 200px;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
   margin-bottom: 20px;
-  z-index: -2;
+  transition: all 0.3s ease-in;
 }
 
 .hero h1 {
@@ -41,6 +40,11 @@ body {
 .hero p {
   font-size: 20px;
   letter-spacing: 1px;
+}
+
+.hero a {
+  color: #fff;
+  cursor: pointer;
 }
 
 .content {
