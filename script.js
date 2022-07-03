@@ -2,134 +2,140 @@ const projects = [
   {
     name: 'Expanding Cards',
     description: 'Responsive cards that can be toggled to expand.',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/expanding-cards',
-    path: './projects/expanding-cards/index.html',
+    projectName: 'expanding-cards',
   },
   {
     name: 'Progress Steps',
     description: 'Smooth animation for steppers. Can be used in forms!',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/progress-steps',
-    path: './projects/progress-steps/index.html',
+    projectName: 'progress-steps',
   },
   {
     name: 'Rotating Navigation',
     description: 'Awesome activity on creating content with navigation.',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/rotating-nav-animation',
-    path: './projects/rotating-nav-animation/index.html',
+    projectName: 'rotating-nav-animation',
   },
   {
     name: 'Hidden Search Widget',
     description:
       'Smoothly displays the search input when clicked. Awesome for additional UX on pages with search function.',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/hidden-search-widget',
-    path: './projects/hidden-search-widget/index.html',
+    projectName: 'hidden-search-widget',
   },
   {
     name: 'Blurry Loading',
     description:
       'Awesome transition on a blurry-effect background upon accessing a website.',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/blurry-loading',
-    path: './projects/blurry-loading/index.html',
+    projectName: 'blurry-loading',
   },
   {
     name: 'Scroll Animation',
     description: 'Great UX on scrolling as sections enters the page smoothly.',
-    soureCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/scroll-animation',
-    path: './projects/scroll-animation/index.html',
+    projectName: 'scroll-animation',
   },
   {
     name: 'Split Landing Page',
     description: 'Cool animation for multiple products on a landing page.',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/split-landing-page',
-    path: './projects/split-landing-page/index.html',
+    projectName: 'split-landing-page',
   },
   {
     name: 'Form Wave Animation',
     description: 'Basic form with animation on input labels.',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/form-wave-animation',
-    path: './projects/form-wave-animation/index.html',
+    projectName: 'form-wave-animation',
   },
   {
     name: 'Sound Board',
     description: 'Very fun activity on working with audio snippet.',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/sound-board',
-    path: './projects/sound-board/index.html',
+    projectName: 'sound-board',
   },
   {
     name: 'Dad Jokes',
     description: 'Chill activity with API handling for dad jokes API.',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/dad-jokes',
-    path: './projects/dad-jokes/index.html',
+    projectName: 'dad-jokes',
   },
   {
     name: 'Event KeyCodes',
     description: 'Really helpful for understanding events with javascript.',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/event-key-codes',
-    path: './projects/event-key-codes/index.html',
+    projectName: 'event-key-codes',
   },
   {
     name: 'FAQ Collapse',
     description:
       'One of the suave activites I have worked. Awesome for FAQs sections UX!',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/faq-collapse',
-    path: './projects/faq-collapse/index.html',
+    projectName: 'faq-collapse',
   },
   {
     name: 'Random Choice Picker',
     description: 'Nice activity for handling random data.',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/random-choice-picker',
-    path: './projects/random-choice-picker/index.html',
+    projectName: 'random-choice-picker',
   },
   {
     name: 'Animated Navigation',
     description: 'Fancy transitions on nav bar.',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/animated-navigation',
-    path: './projects/animated-navigation/index.html',
+    projectName: 'animated-navigation',
   },
   {
     name: 'Incrementing Counter',
     description:
       'Helpful activity. I now understand how developers put fancy numbers like visitors on their webpage!',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/incrementing-counter',
-    path: './projects/incrementing-counter/index.html',
+    projectName: 'incrementing-counter',
   },
   {
     name: 'Drink Water',
     description:
       'Challenging activity. Heavy coding on javascript DOM with a sprinkle of transitions.',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/drink-water',
-    path: './projects/drink-water/index.html',
+    projectName: 'drink-water',
   },
   {
     name: 'Movie App',
     description:
       'Fun acitivty! Creating a Netflix-like project where you also have API calls challenges.',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/movie-app',
-    path: './projects/movie-app/index.html',
+    projectName: 'movie-app',
   },
   {
     name: 'Background Slider',
     description: 'Cool activity! I have learned how carousels work.',
-    sourceCode:
-      'https://github.com/kielllll/50-projects-50-days/tree/main/projects/background-slider',
-    path: './projects/background-slider/index.html',
+    projectName: 'background-slider',
+  },
+  {
+    name: 'Theme Clock',
+    description:
+      'Awesome activity on creating a clock with smooth animation! Also learned how to implement dark mode and light mode.',
+    projectName: 'theme-clock',
+  },
+  {
+    name: 'Button Ripple Effect',
+    description:
+      'Adding animation when the button is clicked. Nice to have for an additional UX.',
+    projectName: 'button-ripple-effect',
+  },
+  {
+    name: 'Drag N Drop',
+    description:
+      'One of the useful activites. I have learned how to implement a drag and drop flow of an application.',
+    projectName: 'drag-n-drop',
+  },
+  {
+    name: 'Drawing App',
+    description:
+      'Fun activity. I now have an idea how to make a fun game with guess the drawing 😉.',
+    projectName: 'drawing-pad',
+  },
+  {
+    name: 'Kinetic CSS Loader',
+    description:
+      'First time to work with keyframes. Nice for creating pre-loader icons!',
+    projectName: 'kinetic-css-loader',
+  },
+  {
+    name: 'Content Placeholder',
+    description:
+      'Useful activity. I have created an app based on this design. Cool to have for UX as well!',
+    projectName: 'content-placeholder',
+  },
+  {
+    name: 'Sticky Navbar',
+    description:
+      'Implementing a sticky nav when scrolling down with some animations.',
+    projectName: 'sticky-navbar',
   },
 ]
 
@@ -137,7 +143,7 @@ const projectsContainer = document.getElementById('projects-container')
 const floatingButton = document.getElementById('floating-button')
 
 // Map each projects and insert to projects section
-projects.forEach(({ name, description, sourceCode, path }) => {
+projects.forEach(({ name, description, projectName }) => {
   projectsContainer.innerHTML += `
     <div class="card">
       <div class="card-header"><h2>${name}</h2></div>
@@ -145,10 +151,10 @@ projects.forEach(({ name, description, sourceCode, path }) => {
         ${description}
       </div>
       <div class="card-actions">
-        <a href="${sourceCode}" target="_blank" class="icon-button" id="source-code">
+        <a href="https://github.com/kielllll/50-projects-50-days/tree/main/projects/${projectName}" target="_blank" class="icon-button" id="source-code">
           <i class="fas fa-code"></i>
         </a>
-        <a href="${path}" target="_blank" class="icon-button" id="new-tab">
+        <a href="./projects/${projectName}/index.html" target="_blank" class="icon-button" id="new-tab">
           <i class="fa-solid fa-up-right-from-square"></i>
         </a>
       </div>
